@@ -7,8 +7,11 @@ var sass = require('gulp-sass'),
 var sourcemaps = require('gulp-sourcemaps');
 var autoprefixer = require('gulp-autoprefixer');
 var connect = require('gulp-connect-php'),
-    browserSync = require('browser-sync'),
-    kirby = './site/**/*.php';
+    browserSync = require('browser-sync');
+var changedfiles = [
+        './assets/sass/**/*.scss',
+        './site/**/*.php'
+    ];
 
 gulp.task('sass', function () {
     return gulp.src(sassinput)
@@ -22,17 +25,13 @@ gulp.task('sass', function () {
     .pipe(gulp.dest(sassoutput))
 });
 
-gulp.task('connect-sync', function() {
-    connect.server({}, function () {
-        browserSync({
-            proxy: '127.0.0.1:8000'
-        });
+gulp.task('serve', function() {
+    browserSync({
+        proxy: '127.0.0.1:8000'
     });
-});
-
-gulp.task('default', ['sass', 'connect-sync'], function () {
-    gulp.watch(sassinput, ['sass']);
-    gulp.watch(kirby).on('change', function () {
+    gulp.watch(changedfiles, ['sass']).on('change', function () {
         browserSync.reload();
     });
 });
+
+gulp.task('default', ['serve']);
