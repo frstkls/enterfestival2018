@@ -1,29 +1,31 @@
 {
-    "name": "kirby-bootstrap-starterkit",
-    "version": "0.1.0",
-    "description": "Personal Kirby 2 starterkit including Bootstrap 3 and a bit of other useful code",
-    "author": "Hendrik Berends <mail@hennirocks.de> (http://hennirocks.de)",
-    "repository": {
-        "type": "git",
-        "url": "https://github.com/NECKRHINOS/kirby-bootstrap-starterkit"
-    },
-    "bugs": {
-        "url": "https://github.com/NECKRHINOS/kirby-bootstrap-starterkit/issues"
-    },
-    "keywords": [
-        "kirby",
-        "bootstrap",
-        "starterkit",
-        "bower",
-        "sass"
-    ],
-    "devDependencies": {
-        "grunt": "~0.4.5",
-        "grunt-contrib-sass": "~0.6.0",
-        "grunt-contrib-jshint": "~0.11.3",
-        "grunt-contrib-nodeunit": "~0.4.1",
-        "grunt-contrib-cssmin": "~0.14.0",
-        "grunt-contrib-watch": "~0.6.1",
-        "grunt-contrib-uglify": "~0.10.1"
-    }
+  "name": "kirby-bootstrap-startkit",
+  "version": "1.0.0",
+  "description": "package json file for kirby-bootstrap-startkit",
+  "main": "gulpfile.babel.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/NECKRHINOS/kirby-bootstrap-starterkit.git"
+  },
+  "keywords": [
+    "bootstrap",
+    "kirby",
+    "gulp",
+    "starterkit"
+  ],
+  "author": "Hendrik Berends",
+  "license": "ISC",
+  "homepage": "https://github.com/NECKRHINOS/kirby-bootstrap-starterkit#readme",
+  "dependencies": {
+    "browser-sync": "^2.11.1",
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^3.1.0",
+    "gulp-connect-php": "0.0.7",
+    "gulp-sass": "^2.2.0",
+    "gulp-sourcemaps": "^1.6.0",
+    "gulp-uglify": "^1.5.3"
+  }
 }

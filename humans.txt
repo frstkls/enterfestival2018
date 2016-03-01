@@ -31,11 +31,11 @@
 
 /* SITE */
 
-    Last update: 2015/12/10
+    Last update: 2016/03/01
     Standards: PHP, HTML5, CSS3
     Doctype: HTML5
     Language: English
-    Components: jQuery, Bootstrap, Sass
+    Components: Bootstrap, Bower, Gulp, jQuery, npm, Sass
     IDE: Atom
 
     Powered by:

@@ -1,7 +1,6 @@
 {
   "name": "kirby-bootstrap-starterkit",
-  "description": "Personal Kirby 2 starterkit including Bootstrap 3 and a bit of other useful code",
-  "main": "",
+  "description": "bower json file for kirby-bootstrap-startkit",
   "authors": [
     "Hendrik Berends <mail@hennirocks.de> (http://hennirocks.de)"
   ],

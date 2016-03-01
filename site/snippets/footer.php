@@ -4,6 +4,8 @@
                 </div>
             </footer>
         </div> <!-- .container -->
-        <?php echo js('assets/js/script.min.js') ?>
+        <?php echo js('bower_components/jquery/dist/jquery.min.js') ?>
+        <?php echo js('bower_components/bootstrap-sass/assets/javascripts/bootstrap.min.js') ?>
+        <?php echo js('assets/js/partials/document-ready.js') ?>
     </body>
 </html>

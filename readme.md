@@ -1,53 +1,66 @@
 # Kirby-Bootstrap-Starterkit
 
-- Blueprints with enhanced SEO fields and links to Kirbytext documentation
-- Bootstrap via Bower
-- Contactform with honeypot
-- Columns Kirby plugin with Bootstrap adjustments
-- Favicons snippet and demo files
-- Grunt minification tasks
-- humans.txt
-- htaccess redirect non-www to www snippet
-- jQuery via Bower
+Personal starterkit for website projects made with **Kirby**, **Bootstrap-Sass** and **Gulp**. Install guide below.
+
+*Note: I really wanted Gulp usage to be simple and not crowded with plugins. That's why I wrote my own gulpfile.*
+
+### Features
+
+- Basic contactform with honeypot
+- Bower
+    - Bootstrap
+    - jQuery
+- Favicons snippet and demo files, originally generated with http://realfavicongenerator.net
+- Gulp
+    - Browser sync
+    - Sass compression and source mapping
+    - Watching stylesheets and PHP file changes via source variables 'sassinput', 'sassoutput' and 'kirby'
+- .htaccess with redirect non-www to www snippet
+- humans.txt and robots.txt
 - jQuery snippets for targeting specific classes
-- Kirby as submodules
-- Kirbytext documentation with tips
-- Navbar toogle animation styles
+- Kirby
+    - Kirby submodules
+    - Kirby columns plugin with Bootstrap adjustments
+    - Kirbytext documentation with tips and tricks
+    - Blueprints with enhanced SEO fields and links to Kirbytext documentation
+- Navbar toogle animation styling
 - Sass
 
-Kudos to all good people mentioned in [humans.txt](https://github.com/NECKRHINOS/kirby-bootstrap-starterkit/blob/master/humans.txt)
+### Requirements
 
-Favicons via <http://realfavicongenerator.net>
+1. git
+2. npm
+3. bower
 
-## About
+****
 
-This is my personal starterkit when working on website projects that are made with Kirby and Bootstrap.
+#### Buy a Kirby license
 
-## Requirements
+Don't forget that Kirby is not for free: Please support the Kirby project by buying a license when going live with a site.
 
-- bower
-- git
-- npm
+http://getkirby.com/buy
 
-## Installation
+****
 
-Execute the following steps in your console at the location where you want the repository to be.
+## Cloning
 
 Clone this repository **recursively**, as it includes Kirby as submodules:
 
     git clone --recursive https://github.com/NECKRHINOS/kirby-bootstrap-starterkit.git
 
-Install npm and bower. This will get you everything provided with the .json files, including Bootstrap and jQuery:
+Configure Git's ```.config``` file to your own needs, i. e. your own remote origin.
+
+## Installing
 
     npm install && bower install
 
-## Done
+## Running
 
-Start working by creating and modifying .scss files in **assets/sass/base**, **assets/sass/mixins** and **assets/sass/partials**. Don't forget to include new files in main.scss. For Javascript, work in **assets/js/partials**. Make sure you are running Grunt.
+    gulp
 
-    grunt
+The gulpfile for this starterkit is designed for working with ```.scss``` and ```.php``` files.
 
-## Updates
+## Updating
 
 Updating Kirby:
 
@@ -58,16 +71,14 @@ Updating Bootstrap and jQuery:
 
     bower update --save
 
-Updating Grunt components:
+Updating node modules:
 
     npm update --save
 
-## Buy a Kirby license
+## Kudos
 
-Don't forget: Kirby's not for free. Please support Bastian's work by buying a license when going live with a site.
+Kudos to all good people mentioned in [humans.txt](https://github.com/NECKRHINOS/kirby-bootstrap-starterkit/blob/master/humans.txt)
 
-http://getkirby.com/buy
+## The future
 
-## Also don't forget
-
-Also don't forget to configure your own remote origin in your Git .config file.
+*I might further expand this personal starterkit with more Gulp stuff like image optimization and Javascript compression/ linting etc. in the future but I'm not in a hurry.*
