@@ -26,8 +26,10 @@ gulp.task('sass', function () {
 });
 
 gulp.task('serve', function() {
-    browserSync({
-        proxy: '127.0.0.1:8000'
+    connect.server({}, function() {
+        browserSync({
+            proxy: '127.0.0.1:8000'
+        });
     });
     gulp.watch(changedfiles, ['sass']).on('change', function () {
         browserSync.reload();
