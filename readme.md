@@ -28,6 +28,8 @@ Configure Git's ```.config``` file to your own needs, i. e. your own remote orig
 
 ## Installing
 
+    cd kirby-bootstrap-starterkit/
+
     npm install && bower install
 
 ## Running
