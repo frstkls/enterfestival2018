@@ -1,10 +1,8 @@
 <?php snippet('header') ?>
 
-<main class="home row">
-    <div class="col-md-12">
-        <h1><?php echo $page->title()->html() ?></h1>
-        <?php echo $page->text()->kirbytext() ?>
-    </div>
+<main class="home">
+    <h1><?php echo $page->title()->html() ?></h1>
+    <?php echo $page->text()->kirbytext() ?>
 </main>
 
 <?php snippet('footer') ?>
