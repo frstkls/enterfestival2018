@@ -28,10 +28,15 @@
     URL: http://bastianallgeier.com
     Location: Mannheim, Germany
 
+    Sitemap plugin: Thomas Ghysels
+    Twitter: @_thgh
+    URL: https://thomasg.be
+    Location: Gent, Belgium
+
 
 /* SITE */
 
-    Last update: 2016/06/10
+    Last update: 2016/06/30
     Standards: PHP, HTML5, CSS3
     Doctype: HTML5
     Language: English
