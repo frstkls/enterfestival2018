@@ -12,8 +12,11 @@ var autoprefixer = require('gulp-autoprefixer'),
 
 gulp.task('serve', ['copylibrary', 'copyplugins', 'sass'], function() {
     connect.server({}, function() { browserSync({proxy: '127.0.0.1:8000'}); }); // Connect to localhost
-    gulp.watch('assets/sass/**/*.scss', ['sass']); // Watch .scss files being changed (Browser reloading in task 'sass')
-    gulp.watch('site/**/*.php').on('change', browserSync.reload); // Watch .php files in 'site' being changed, if: Reload browser
+    gulp.watch('assets/scss/**/*.scss', ['sass']); // Watch .scss files being changed (Browser reloading in task 'sass')
+    gulp.watch([
+        'site/**/*.php',
+        'site/blueprints/*.yml'
+    ]).on('change', browserSync.reload);  // Watch .php files in 'site' and blueprints being changed, if: Reload browser
 });
 
 gulp.task('copylibrary', function() {
@@ -36,7 +39,7 @@ gulp.task('copyplugins', function() {
 });
 
 gulp.task('sass', function() {
-    return gulp.src('assets/sass/**/*.scss') // Get all .scss files
+    return gulp.src('assets/scss/**/*.scss') // Get all .scss files
     .pipe(sourcemaps.init()) // Create a sourcemap
     .pipe(sass({outputStyle: 'compressed'}).on('error', sass.logError)) // Minify the outputted file
     .pipe(autoprefixer()) // Add vendor prefixes to styles
