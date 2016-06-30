@@ -1,10 +1,11 @@
 var gulp = require('gulp');
-var browserSync = require('browser-sync'),
-    autoprefixer = require('gulp-autoprefixer'),
+var autoprefixer = require('gulp-autoprefixer'),
+    browserSync = require('browser-sync'),
     concat = require('gulp-concat'),
     connect = require('gulp-connect-php'),
     rename = require('gulp-rename'),
     sass = require('gulp-sass'),
+    stripCssComments = require('gulp-strip-css-comments'),
     sourcemaps = require('gulp-sourcemaps'),
     uglify = require('gulp-uglify'),
     watch = require('gulp-watch');
@@ -41,6 +42,7 @@ gulp.task('sass', function() {
     .pipe(autoprefixer()) // Add vendor prefixes to styles
     .pipe(rename({suffix: '.min'})) // Rename the outputted file by adding suffix 'min'
     .pipe(sourcemaps.write('../maps')) // Put sourcemap here
+    .pipe(stripCssComments({preserve: false})) // Get rid of stylesheet comments
     .pipe(gulp.dest('assets/css')) // Put here
     .pipe(browserSync.stream()); // Reload browser
 });
