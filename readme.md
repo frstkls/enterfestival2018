@@ -1,6 +1,6 @@
 # Kirby-Bootstrap-Starterkit
 
-Personal starterkit for website projects made with **Kirby**, **Bootstrap-Scss** and **Gulp**. Install guide below.
+Personal starterkit for website projects made with **Kirby**, **Bootstrap-Sass** and **Gulp**. Install guide below.
 
 ### Requirements
 
