@@ -5,7 +5,6 @@
 /site/accounts/.*
 /site/accounts/*.php
 /site/cache/*
-/thumbs/*
 
 .DS_Store
 .ftppass

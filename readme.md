@@ -8,6 +8,8 @@ Personal starterkit for website projects made with **Kirby**, **Bootstrap-Sass**
 2. npm
 3. bower
 
+It is not possible to just download this repository and run it locally: It includes Kirby as Git submodules. You need to manually add Kirby to this starterkit if just downloading. Also note that this repository is intended to be used with Git, Gulp & Co.
+
 ****
 
 #### Buy a Kirby license
