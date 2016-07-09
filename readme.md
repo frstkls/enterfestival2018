@@ -1,6 +1,6 @@
 # Kirby-Bootstrap-Starterkit
 
-Personal starterkit for website projects made with **Kirby**, **Bootstrap-Sass** and **Gulp**. Install guide below.
+Personal starterkit for website projects made with **Kirby**, **Bootstrap-Scss** and **Gulp**. Install guide below.
 
 ### Requirements
 
@@ -42,11 +42,11 @@ This task does the following:
 
 - Copies (Bower) components into "assets"
 - Creates minified asset and sourcemap files
-- Creates minified stylesheet file from Sass files
+- Creates minified stylesheet file from Scss files
 - Does autoprefixing
 - Runs Kirby locally
 
-Editing Sass and PHP files (in "site") refreshes the browser.
+Editing Scss and PHP files (in "site") refreshes the browser.
 
 ## Updating
 
