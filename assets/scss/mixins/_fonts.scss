@@ -1,0 +1,55 @@
+@mixin fontLight($color, $font-size, $line-height) {
+    color: $color;
+    //font-family: 'YourFontFamilyHere', sans-serif;
+    font-size: $font-size;
+    font-style: normal;
+    font-weight: normal;
+    line-height: $line-height;
+}
+
+@mixin fontRegular($color, $font-size, $line-height) {
+    color: $color;
+    //font-family: 'YourFontFamilyHere', sans-serif;
+    font-size: $font-size;
+    font-style: normal;
+    font-weight: normal;
+    line-height: $line-height;
+}
+
+@mixin fontSemibold($color, $font-size, $line-height) {
+    color: $color;
+    //font-family: 'YourFontFamilyHere', sans-serif;
+    font-size: $font-size;
+    font-style: normal;
+    font-weight: normal;
+    line-height: $line-height;
+}
+
+@mixin fontBold($color, $font-size, $line-height) {
+    color: $color;
+    //font-family: 'YourFontFamilyHere', sans-serif;
+    font-size: $font-size;
+    font-style: normal;
+    font-weight: normal;
+    line-height: $line-height;
+}
+
+@mixin weightLight {
+    //font-family: 'YourFontFamilyHere', sans-serif;
+    font-weight: normal;
+}
+
+@mixin weightRegular {
+    //font-family: 'YourFontFamilyHere', sans-serif;
+    font-weight: normal;
+}
+
+@mixin weightSemibold {
+    //font-family: 'YourFontFamilyHere', sans-serif;
+    font-weight: normal;
+}
+
+@mixin weightBold {
+    //font-family: 'YourFontFamilyHere', sans-serif;
+    font-weight: normal;
+}

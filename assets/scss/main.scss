@@ -4,8 +4,15 @@
 @import 'base/fonts';
 @import 'base/grid';
 
-@import 'mixins/transform-mixins';
-@import 'mixins/transition-mixins';
+@import 'mixins/all-headings';
+@import 'mixins/alpha';
+@import 'mixins/fonts';
+@import 'mixins/hyperlinks';
+@import 'mixins/icon-fonts';
+@import 'mixins/reset';
+@import 'mixins/tint-and-shade';
+@import 'mixins/transformations';
+@import 'mixins/transitions';
 
 @import 'partials/figure';
 @import 'partials/kirby-columns';
