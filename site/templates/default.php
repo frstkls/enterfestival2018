@@ -1,8 +1,8 @@
-<?php snippet('header') ?>
+<? snippet('header') ?>
 
 <main class="default">
-    <h1><?php echo $page->title()->html() ?></h1>
-    <?php echo $page->text()->kirbytext() ?>
+    <h1><?= $page->title()->html() ?></h1>
+    <?= $page->text()->kirbytext() ?>
 </main>
 
-<?php snippet('footer') ?>
+<? snippet('footer') ?>
