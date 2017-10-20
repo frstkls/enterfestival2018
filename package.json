@@ -4,7 +4,7 @@
   "version": "1.0.0",
   "main": "index.js",
   "license": "ISC",
-  "author": "Hendrik Berends (https://www.hendrik-berends.de)",
+  "author": "Hendrik Berends <contact@hendrik-berends.de> (https://www.hendrik-berends.de)",
   "homepage": "https://github.com/NECKRHINOS/kirby-bootstrap-starterkit#readme",
   "repository": {
     "type": "git",
