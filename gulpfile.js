@@ -14,13 +14,14 @@ gulp.task('serve', ['copylibrary', 'copyplugins', 'sass'], function() {
     connect.server({}, function() { browserSync({proxy: '127.0.0.1:8000'}); }); // Connect to localhost
     gulp.watch('assets/scss/**/*.scss', ['sass']); // Watch .scss files being changed (Browser reloading in task 'sass')
     gulp.watch([
+        'content/**/*.txt',
         'site/**/*.php',
         'site/blueprints/*.yml'
     ]).on('change', browserSync.reload);  // Watch .php files in 'site' and blueprints being changed, if: Reload browser
 });
 
 gulp.task('copylibrary', function() {
-    return gulp.src('./bower_components/jquery/dist/jquery.js') // Get file(s)
+    return gulp.src('./node_modules/jquery/dist/jquery.js') // Get file(s)
     .pipe(uglify()) // Minify the outputted file
     .pipe(rename({suffix: '.min'})) // Rename the outputted file by adding suffix 'min'
     .pipe(gulp.dest('assets/js/vendor')); // Put here
@@ -28,8 +29,8 @@ gulp.task('copylibrary', function() {
 
 gulp.task('copyplugins', function() {
     return gulp.src([
-        './bower_components/bootstrap-sass/assets/javascripts/bootstrap.js'
-        // Add more plugins here, i. e. Ekko Lightbox, Modernizer etc.
+        './node_modules/bootstrap-sass/assets/javascripts/bootstrap.js'
+        // Add more stuff here, i. e. Ekko Lightbox, Font Awesome, Modernizer, Slick Carousel etc.
     ]) // Get file(s)
     .pipe(sourcemaps.init()) // Create a sourcemap
     .pipe(concat('plugins.min.js')) // Bundle all files into this one

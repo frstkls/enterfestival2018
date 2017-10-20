@@ -1,3 +1,7 @@
+# RELAUNCH SOON
+
+****
+
 # Kirby-Bootstrap-Starterkit
 
 Personal starterkit for website projects made with **Kirby**, **Bootstrap-Sass** and **Gulp**. Install guide below.
@@ -6,7 +10,6 @@ Personal starterkit for website projects made with **Kirby**, **Bootstrap-Sass**
 
 1. git
 2. npm
-3. bower
 
 It is not possible to just download this repository and run it locally: It includes Kirby as Git submodules. You need to manually add Kirby to this starterkit if just downloading. Also note that this repository is intended to be used with Git, Gulp & Co.
 
@@ -32,7 +35,7 @@ Configure Git's ```.config``` file to your own needs, i. e. your own remote orig
 
     cd kirby-bootstrap-starterkit/
 
-    npm install && bower install
+    npm install
 
 ## Running
 
@@ -40,7 +43,7 @@ Configure Git's ```.config``` file to your own needs, i. e. your own remote orig
 
 This task does the following:
 
-- Copies (Bower) components into "assets"
+- Copies (NPM) components into "assets"
 - Creates minified asset and sourcemap files
 - Creates minified stylesheet file from Scss files
 - Does autoprefixing
@@ -55,11 +58,7 @@ Updating Kirby:
     git submodule foreach --recursive git checkout master
     git submodule foreach --recursive git pull
 
-Updating Bootstrap and jQuery:
-
-    bower update --save
-
-Updating node modules:
+Updating Bootstrap, jQuery, node modules:
 
     npm update --save
 
