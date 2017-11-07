@@ -28,6 +28,7 @@
         <? snippet('favicons') ?>
     </head>
     <body>
-        <div class="container">
-            <header></header>
-            <? snippet('navbar') ?>
+        <div id="wrap">
+            <div id="main">
+                <header></header>
+                <? snippet('navbar') ?>

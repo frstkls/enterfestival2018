@@ -1,0 +1,70 @@
+html, body {
+  height: 100%;
+}
+
+#wrap {
+  min-height: 100%;
+}
+
+#main {
+  overflow:hidden;
+  padding-bottom:150px; /* this needs to be bigger than footer height*/
+}
+
+footer {
+  background:$donkergrijs;
+  color:$wit;
+  position: relative;
+  margin-top: -150px; /* negative value of footer height */
+  height: 150px;
+  clear:both;
+  padding-top:20px;
+} 
+
+.container {
+  padding:0px;
+}
+
+.containerfullwidth{
+  padding:0px 30px 30px 30px;
+}
+
+.mainnav > li > a{
+  padding:30px 0px;
+}
+
+.dropdown-menu {
+	padding:10px;
+	margin-top:20px;
+}
+
+.dropdown-menu li {
+	padding:10px;
+}
+
+.logo {
+	background:red;
+	padding:30px;
+  min-height:400px;
+}
+
+.banner {
+	background:yellow;
+  padding:0px;
+}
+
+.voorstellingenfilter {
+  margin:30px 0px;
+}
+
+.voorstellingenfilter .tab-content {
+  margin:30px 0px;
+}
+
+.voorstellingenfilter .tab-content .btn {
+  background:none;
+}
+
+.voorstelling img {
+  max-width:100%;
+}

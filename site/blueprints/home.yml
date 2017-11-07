@@ -11,6 +11,9 @@ fields:
     label: Title suffix (Optional)
     type: text
     width: 1/2
+  homebanner:
+    label: Afbeelding
+    type: image
   text:
     label: Text and images
     type: textarea
