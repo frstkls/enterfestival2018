@@ -1,8 +1,6 @@
 <?php snippet('header') ?>
 
-	<div class="container" role="main">
-		
-		
+	<main class="container" role="main">
 		<div class="text">
 		<div class="row">
 			<div class="col-md-6">
@@ -28,7 +26,7 @@
 		
 		<!-- <?php snippet('nav-pager') ?> -->
 				
-	</div> <!-- // container -->
+	</main> <!-- // container -->
 
 <?php snippet('footer') ?>
 <script>

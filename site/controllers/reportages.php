@@ -3,12 +3,18 @@
     $voorstellingen = page('voorstellingen')
                           ->children()
                           ->visible();   
-    if($dag = param('categorie')) {
+    if($dag = param('dag')) {
       $voorstellingen =  page('voorstellingen')
                             ->children()
                             ->visible()
-                            ->filterBy('categorie', $categorie, ',');
+                           ->filterBy('dag', $dag, ',');
     }
+    if($zone = param('zone')) {
+      $voorstellingen =  page('voorstellingen')
+                            ->children()
+                            ->visible()
+                           ->filterBy('zone', $zone, ',');
+    }                   
       return compact('voorstellingen');
 
   };

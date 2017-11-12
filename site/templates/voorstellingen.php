@@ -1,6 +1,6 @@
 <?php snippet('header') ?>
 
-	<div class="containerfullwidth" role="main">
+	<div class="container-fluid" role="main">
 		<div class="text">
 			<h1><?php echo $page->title()->html() ?></h1>
 			

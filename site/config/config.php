@@ -31,3 +31,26 @@ of the system, please check out http://getkirby.com/docs/advanced/options
 
 c::set('sitemap.exclude', array('error'));
 c::set('debug', true);
+c::set('languages', array(
+  array(
+    'code'    => 'fr',
+    'name'    => 'FR',
+    'default' => true,
+    'locale'  => 'fr_FR',
+    'url'     => '/',
+  ),
+  array(
+    'code'    => 'nl',
+    'name'    => 'NL',
+    'locale'  => 'nl_NL',
+    'url'     => '/nl',
+  ),
+  array(
+    'code'    => 'en',
+    'name'    => 'EN',
+    'locale'  => 'en_US',
+    'url'     => '/en',
+  ),
+));
+c::set('language.detect', true);
+c::set('cache', false);

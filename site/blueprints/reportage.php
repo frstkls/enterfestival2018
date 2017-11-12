@@ -1,6 +1,6 @@
 <?php if(!defined('KIRBY')) exit ?>
 
-title: Voorstelling
+title: Reportage
 pages: false
 files: true
   sortable: true
@@ -14,21 +14,13 @@ fields:
   text:
     label: Tekst
     type:  textarea
-  Dag:
-    label: Dag
+  categorie:
+    label: Categorie
     type: checkboxes 
     options: field
     field:
-      page: voorstellingen
-      name: dag
-      separator: ,  
-  Dag:
-    label: Zone
-    type: checkboxes 
-    options: field
-    field:
-      page: voorstellingen
-      name: zone@
+      page: reportages
+      name: categorie
       separator: ,  
   coverImage:
     label: Beeld overzichtspagina

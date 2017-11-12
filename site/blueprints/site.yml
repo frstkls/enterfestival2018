@@ -15,6 +15,9 @@ fields:
     label: Author of website
     type: text
     width: 1/2
+  logoimg:
+    label: Logo
+    type: image
   footer:
     label: Footer
     type: textarea

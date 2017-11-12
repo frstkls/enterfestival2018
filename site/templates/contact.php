@@ -1,6 +1,6 @@
 <? snippet('header') ?>
 
-<main class="contact">
+<main class="contact container">
     <h1><?= $page->title()->html() ?></h1>
     <?= $page->text()->kirbytext() ?>
     <hr />
